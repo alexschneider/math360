@@ -197,7 +197,7 @@ first three child mother. Therefore, we know that the $50$th and $51$st position
 mothers both have two children. The average of $2$ and $2$ is $\frac{2+2}{2}$ or
 $2$. Therefore, the sample median number of children is $2$.
 
-\subsubsection*{d.}
+\subsubsection*{d.}a
 The first quartile is found by averaging the floor and ceiling of the number
 given by $0.25 \times (n + 1)$, or $0.25 \times (101)$ which gives us $25.25$.
 Thus, the first quartile is the average of the $25$th and $26$th mother, which
@@ -226,10 +226,152 @@ deviation is those who had $2$ or $3$ children. The ratio of them is
 $\frac{30+12}{100}$, or $\frac{42}{100}$, which evaluates to $0.42$, giving us a
 percentage of $42\%$. 
 
-\subsection*{Problem 12} % (a-e for method c only; f; g)
-\subsection*{Problem 15}
-\subsection*{Problem 16}
+\subsection*{Problem 12 (Method C Only)} % (a-e for method c only; f; g)
+\subsubsection*{Data Set}
+\[
+    20.2, 20.5, 20.5, 20.7, 20.8, 20.9, 21.0,21.0, 21.0, 21.0, 21.0, 21.5, 21.5,
+    21.5, 21.5, 21.6
+\]
+\subsubsection*{a.}
+The mean measurement is calculated as follows:
 
+\[\overline{X} = \frac{\left(
+    \begin{array}{c}
+        20.2+20.5+20.5+20.7+20.8+20.9+21.0+21.0+\\
+        21.0+21.0+21.0+21.5+21.5+21.5+21.5+21.6
+    \end{array}
+\right)}{16}\]
+
+\[\overline{X} = \frac{336.2}{16}\]
+\[\overline{X} = 21.0125\]
+
+\subsubsection*{b.}
+The median measurement is the average of the measurements at the $\frac{16}{2}$
+and $\frac{16}{2}+1$ positions, which is the $8$th and $9$th position
+respectively. The numbers at the $8$th and $9$th position are both $21.0$, which
+means that the average is $21.0$, which means that the median is $21.0$. 
+
+\subsubsection*{c.}
+The $20\%$ trimmed measurement can be found by taking $20\%$ of $16$, which is
+$0.2 \times 16$ which simplifies to $3.2$. We then round it up to $4$, and drop
+4 measurements off of each side, and recalculate the mean. We get:
+
+\[\overline{X} = \frac{\left(
+        20.8+20.9+21.0+21.0+21.0+21.0+21.0+21.5
+    \right)}{8}\]
+\[\overline{X} = \frac{168.2}{8}\]
+\[\overline{X} = 21.025\]
+
+\subsubsection*{d.}
+The first and third quartile is found by averaging the floor and ceiling of the
+number given by $0.25 \times (16 + 1)$ and $0.75 \times (16 + 1)$ respectively. 
+These simplify to $4.25$ and $12.75$ respectively, which gives us the average of
+the number at the $4$th and $5$th position for the first quartile, and the
+average of the number at the $12$th and $13$th position for the third quartile. 
+
+For the first quartile, we have the average of $20.7$ and $20.8$, which is
+$20.75$. For the third quartile, we have the average of $21.5$ and $21.5$, which
+is $21.5$. 
+
+\subsubsection*{e.}
+We can find the standard deviation like so:
+
+\[s = \sqrt{\frac{1}{16-1}\sum\limits_{i=1}^{n}{(X_i-\overline X)}^2}\]
+\[s = \sqrt{
+    \frac{1}{15}
+    \left(\begin{array}{c} 
+        {\left(20.2-21.0125\right)}^2+
+        {\left(20.5-21.0125\right)}^2+
+        {\left(20.5-21.0125\right)}^2+
+        {\left(20.5-21.0125\right)}^2+\\
+        {\left(20.7-21.0125\right)}^2+
+        {\left(20.8-21.0125\right)}^2+
+        {\left(20.9-21.0125\right)}^2+
+        {\left(21.0-21.0125\right)}^2+\\
+        {\left(21.0-21.0125\right)}^2+
+        {\left(21.0-21.0125\right)}^2+
+        {\left(21.0-21.0125\right)}^2+
+        {\left(21.0-21.0125\right)}^2+\\
+        {\left(21.5-21.0125\right)}^2+
+        {\left(21.5-21.0125\right)}^2+
+        {\left(21.5-21.0125\right)}^2+
+        {\left(21.5-21.0125\right)}^2+\\
+        {\left(21.6-21.0125\right)}^2
+    \end{array}\right)
+    }
+\]
+\[s \approx \sqrt{\frac{1}{15} \times 2.9}\]
+\[s \approx 0.11 \]
+
+\subsubsection*{f.}
+The largest standard deviation might be \textit{Method A}, because there are no
+hard and fast measurements for it. It was basically down to an educated guess,
+and humans are not very good at guessing. 
+
+\subsubsection*{g.}
+It is better for a measurement to have a smaller standard deviation than a
+larger deviation. It gives authenticity to the accuracy of measuring, and people
+who use it are likely to get a closer measurement to the actual number they are
+measuring for.
+
+\subsection*{Problem 15}
+\subsubsection*{Data Set}
+\[2,18,23,41,44,46,49,61,62,74,76,79,82,89,92,95\]
+
+\subsubsection*{a.}
+The tertiles can be found by using the cut points $(\frac{1}{3})(n+1)$ and 
+$(\frac{2}{3})(n+1)$. For the given data set, we have cut points $(\frac{1}{3})(17)$, which
+simplifies to $5.\overline{6}$, and $(\frac{2}{3})(17)$, which simplifies to
+$11.\overline{3}$. 
+
+The data set that corresponds to the first tertile is:
+
+\[2,18,23,41,44\]
+
+The second tertile:
+
+\[46,49,61,62,74,76\]
+
+The third tertile:
+
+\[79,82,89,92,95\]
+
+\subsubsection*{b.}
+The quintiles can be found by using the cut points $(\frac{1}{5})(n+1)$,
+$(\frac{2}{5})(n+1)$,
+$(\frac{3}{5})(n+1)$, $(\frac{4}{5})(n+1)$. These are  $(\frac{1}{5})(17)$,
+$(\frac{2}{5})(17)$, $(\frac{3}{5})(17)$, and
+$(\frac{4}{5})(17)$, respectively, which simplify down to $3.4$, $6.8$, $10.2$, and
+$13.6$ respectively. 
+
+The data set that corresponds to the first quintile is:
+
+\[2,18,23\]
+
+The second quintile:
+
+\[41,44,46\]
+
+The third quintile:
+
+\[49,61,62,74\]
+
+The fourth quintile:
+
+\[76,79,82\]
+
+The fifth quintile:
+
+\[89, 92, 95\]
+
+\subsection*{Problem 16}
+\subsubsection*{a.}
+It is unlikely that the outlier is correct, as the same rod was measured all
+five times. 
+
+\subsubsection*{b.}
+The outlier could be correct, as it's not the same car being priced. One of the
+cars could be a luxury or sports car. 
 
 \end{document}
 
