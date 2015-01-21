@@ -1,0 +1,235 @@
+%        File: homework1.tex
+%     Created: Tue Jan 20 02:00 PM 2015 P
+% Last Change: Tue Jan 20 02:00 PM 2015 P
+%
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}
+\usepackage{booktabs}
+\title{MATH 360 Homework 1}
+\author{Alex Schneider}
+\begin{document}
+\maketitle
+\section*{Section 1.1}
+\subsection*{Problem 2}
+For estimating the mean height of all students in a university, the best
+sampling strategy would option \textit{iii}, measuring the height of the first
+student on each page of the phone book. This gives a more pseudorandom sample
+than the other two options, because the population is likely to be more diverse
+than all the basketball players or all the engineering majors, and less
+susceptible to sample bias. 
+
+\subsection*{Problem 3}
+\subsubsection*{a.}
+False. A simple random sampling is extremely likely, given a large enough sample
+size, to provide a representative sample, but there is still a chance that it
+may be biased one way or another, due to the nature of randomness. 
+
+\subsubsection*{b.}
+True. A simple random sample is free from any sort of tendency towards any bias,
+every member of a population is equally likely to be picked.
+
+\subsection*{Problem 4}
+\subsubsection*{a.}
+False. Random sampling isn't perfect.
+
+\subsubsection*{b.}
+True.
+
+\section*{Section 1.2}
+\subsection*{Problem 1}
+False. The mean is the sum of all numbers divided by the number of numbers is
+the mean. If the numbers are evenly distributed, the average might be the exact
+middle, but if there are any outliers, it is unlikely that this will be the
+case.
+
+\subsection*{Problem 2}
+The sample mean is not always the most frequently occurring value. For example,
+consider the data in Figure~\ref{fig:example1}.
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{|l|c|r|} % chktex 44
+        \hline % chktex 44
+        1 & 1 & 1 \\
+        \hline % chktex 44
+        4 & 5 & 7 \\
+        \hline % chktex 44
+        8 & 9 & 9 \\
+        \hline % chktex 44
+    \end{tabular}
+    \caption{Example data for Problem 2}
+\label{fig:example1}
+\end{figure}
+
+
+The mean is 5, but the most frequently occurring value is 1.
+
+\subsection*{Problem 3}
+The sample mean is not always equal to one of the values in the sample. For
+example, consider the data in Figure~\ref{fig:example2}. 
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{|l|c|r|} % chktex 44
+        \hline % chktex 44
+        1 & 1 & 1 \\
+        \hline % chktex 44
+        4 & 5 & 6 \\
+        \hline % chktex 44
+        7 & 9 & 9 \\
+        \hline % chktex 44
+    \end{tabular}
+    \caption{Example data for Problem 3}
+\label{fig:example2}
+\end{figure}
+
+The mean is $4.\overline{8}$, which is not in the set. 
+
+\subsection*{Problem 4}
+The sample median is not always equal to one of the values in the sample. If
+there are an even number of values in the sample, the sample median is equal to
+the value at the $\frac{n}{2}$ and $\frac{n}{2} + 1$ positions averaged. For
+example, consider the data in Figure~\ref{fig:example3} 
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{|l|c|r|} % chktex 44
+        \hline % chktex 44
+        1 & 1 & 1 \\
+        \hline % chktex 44
+        4 & 5 & 6 \\
+        \hline % chktex 44
+    \end{tabular}
+    \caption{Example data for Problem 4}
+\label{fig:example3}
+\end{figure}
+
+The median is $\frac{1+4}{2}$ or $2.5$, which is clearly not in the sample. 
+
+\subsection*{Problem 5}
+The sample size for which the median will always equal one of the values in the
+sample is any odd sample size. For example, samples with sizes of $1, 3, 5, \dots$
+all have medians where the value is inside the sample itself
+
+\subsection*{Problem 6}
+The sample standard deviation may be greater than the mean if the data is all
+very close together. For example, consider the data in
+Figure~\ref{fig:example4}.
+
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{|l|c|r|} % chktex 44
+        \hline % chktex 44
+        1 & 1 & 1 \\
+        \hline % chktex 44
+        1 & 1 & 1 \\
+        \hline % chktex 44
+    \end{tabular}
+    \caption{Example data for Problem 6}
+\label{fig:example4}
+\end{figure}
+
+The mean is $1$, while the standard deviation is $0$. 
+
+\subsection*{Problem 9}
+Previously, the mean was calculated by using the formula: 
+$\overline{x}=\frac{X_{0}+X_{1}+X_{2}+\cdots+X_{n}}{n}$, where $X_{i}$ was 
+each employee's individual salary, and $n$ was the number of employees
+working at the company. To compute the new salary, we can use  
+$\overline{x}=\frac{1.05 \times X_{0}+1.05 \times X_{1}+1.05 \times X_{2}+\cdots+1.05 \times X_{n}}{n}$
+to calculate the new mean. We can then factor out the $1.05$ to get 
+$\overline{x}=1.05 \times \frac{X_{0}+X_{1}+X_{2}+\cdots+X_{n}}{n}$, which means that
+the new mean is exactly $1.05$ times the pre-raise mean. 
+
+For the standard deviation, we have the equation
+$\sqrt{\frac{1}{n-1}\sum\limits_{i=1}^{n}{(X_i-\overline X)}^2}$ which gives us
+the standard deviation prior to the raise, and after the raise, we can use the
+equation $\sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n{(1.05 \times X_i-1.05 \times \overline X)}^2}$ 
+which gives us the new standard deviation. Since we can factor out a 1.05, we
+are left with $\sqrt{\frac{1}{n-1} \times 1.05^2 \times \sum\limits_{i=1}^n{(X_i-\overline X)}^2}$ 
+which, when we take the $1.05$ outside the square root, we get
+$1.05 \times \sqrt{\frac{1}{n-1}\sum\limits_{i=1}^n{(X_i-\overline X)}^2}$, or exactly
+$1.05$ times the standard deviation of the pre-raise standard deviation. 
+
+\subsection*{Problem 10}
+\subsubsection*{a.}
+We can find the mean by adding all the results together and dividing by the
+number of responses like so:
+
+\[\overline X = \frac{0 \times 27+1 \times 22+2 \times 30+3 \times 12+4 \times 7+5 \times 2}{100}\]
+\[\overline X = \frac{0+22+60+36+28+10}{100}\]
+\[\overline X = \frac{156}{100}\]
+\[\overline X = 1.56\]
+
+The sample mean of all the children is $1.56$ children per woman.
+
+\subsubsection*{b.}
+We can find the standard deviation of the number of children like so:
+
+\[s = \sqrt{\frac{1}{100-1}\sum\limits_{i=1}^{n}{(X_i-\overline X)}^2}\]
+\[s = \sqrt{
+    \frac{1}{99}
+    \left(\begin{array}{c}\left( 27 \times {(0-1.56)}^2 \right) + 
+        \left(22 \times {(1-1.56)}^2 \right) + \left( 30 \times {(2-1.56)}^2 \right) +\\
+        \left( 12 \times {(3-1.56)}^2 \right) + \left( 7 \times {(4-1.56)}^2 \right) + 
+        \left( 2 \times {(5-1.56)}^2 \right)
+    \end{array}\right)
+    }
+\]
+\[s = \sqrt{\frac{1}{99}\left(\left(22 \times
+    {(-0.56)}^2\right) + \left(30 \times 1.44^2\right) + \left(12 \times 2.44^2\right)
+    + \left( 7 \times 3.44^2\right) + \left(2 \times 4.44^2\right)\right) }\]
+\[s = \sqrt{\frac{1}{99}\left(262.8128\right)}\]
+% TODO: show more steps if there's time
+\[s = \sqrt{2.6546\overline{74}}\]
+\[s \approx 1.629317\] 
+
+The standard deviation of all the children is approximately $1.629317$. 
+
+\subsubsection*{c.}
+The sample median of the number of children is the average of the two numbers at
+the $\frac{100}{2}$ and $\frac{100}{2} + 1$ position, or the $50$th and $51$st
+position. We know that the $28$th position is the first 1 child mother, the $50$th
+position is the first two child mother, and the $80$th position position is the
+first three child mother. Therefore, we know that the $50$th and $51$st position
+mothers both have two children. The average of $2$ and $2$ is $\frac{2+2}{2}$ or
+$2$. Therefore, the sample median number of children is $2$.
+
+\subsubsection*{d.}
+The first quartile is found by averaging the floor and ceiling of the number
+given by $0.25 \times (n + 1)$, or $0.25 \times (101)$ which gives us $25.25$.
+Thus, the first quartile is the average of the $25$th and $26$th mother, which
+have $0$ and $0$ children respectively. Averaging the two gives us
+$\frac{0+0}{2}$ or $0$. 
+
+\subsubsection*{e.}
+The mean number of children is $1.56$, so the number of women that had more
+than the mean number of children is the number of women who had more than $1.56$
+children. The ratio of them is $\frac{30+12+7+2}{100}$, or
+$\frac{51}{100}$, which evaluates to $0.51$, giving us a percentage of $51\%$.
+
+\subsubsection*{f.}
+The mean number of children is $1.56$, and the standard deviation is
+approximately $1.629317$. Adding the two numbers together gives us approximately
+$3.189317$. Thus, the number of women who had more children than one
+standard deviation above the mean is those who had at least 4 children. The
+ratio of them is $\frac{7+2}{100}$ or $\frac{9}{100}$, which evaluates to
+$0.09$, giving us a percentage of $9\%$.
+
+\subsubsection*{g.}
+The mean number of children is $1.56$, and the standard deviation is
+approximately $1.629317$. Adding the two numbers gives us approximately
+$3.189317$. Thus, the number of women who had children within the standard
+deviation is those who had $2$ or $3$ children. The ratio of them is
+$\frac{30+12}{100}$, or $\frac{42}{100}$, which evaluates to $0.42$, giving us a
+percentage of $42\%$. 
+
+\subsection*{Problem 12} % (a-e for method c only; f; g)
+\subsection*{Problem 15}
+\subsection*{Problem 16}
+
+
+\end{document}
+
