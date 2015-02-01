@@ -35,24 +35,88 @@ uniform. We multiply $252$ by $2$ to get $454$ different ways of dividing 10
 basketball players in two teams. 
 
 \subsection*{Problem 6}
-
+In this circumstance, we have ordered, without replacement because the
+president, vice president, and secretary cannot be the same person. We 
+can express this by the formula $\frac{8!}{(8-3)!}$, which simplifies to $336$
+different ways to chose a president, vice president, and secretary from an 8
+person committee. 
 
 \subsection*{Problem 9}
+\subsubsection*{a.}
+There are $26$ letters and $10$ digits, for a total of $36$ possible
+options for each character. Since characters can be chosen more than once,
+this is ordered, with replacement. Therefore, there are $36^8$, or
+$2821109907456$ different permutations for 8 character passwords. 
+
+\subsubsection*{b.}
+Again, there are $36$ possible options for each character. The difference is,
+for one of the characters, there are only $10$ possible options. Therefore,
+there are $36^7\times10^1$, or $949318771330$ possible options for an 8
+character password that requires at least one digit.  
+
+\subsubsection*{c.}
+We have the number of possible permutations in part \textit{a} of this problem,
+the number of valid permutations in part \textit{b} of this problem, so, our
+probability is as follows:
+
+\[P(valid) = \frac{949318771330}{2821109907456}\]
+\[P(valid) \approx 0.34 \]
 
 \subsection*{Problem 11}
+The probability that they match can be expressed as the union of two separate
+probabilities, $P(2\;blue)$ and $P(2\;white)$. We can find them as follows:
+
+\subsubsection*{$P(2\;blue)$}
+\[P(2\;blue) = \frac{8}{14} \times \frac{4}{6}\]
+\[P(2\;blue) = \frac{8}{21}\]
+
+\subsubsection*{$P(2\;white)$}
+\[P(2\;white) = \frac{6}{14} \times \frac{2}{6}\]
+\[P(2\;white) = \frac{1}{7}\]
+
+\subsubsection*{$P(same\;color)$}
+\[P(same\;color) = \frac{8}{21} + \frac{1}{7}\]
+\[P(same\;color) = \frac{11}{21}\]
+\[P(same\;color) \approx 0.52 \]
 
 \section*{Section 2.3}
 \subsection*{Problem 1}
+Based on what we discussed in class, $P(A)\times P(B)$ needs to equal 
+$P(A \cap B)$. For this to be possible, $P(B)$ needs to be 
+$\frac{0.2}{0.8}$ or $0.25$. 
 
 \subsection*{Problem 2}
+Based on what we discussed in class, $P(A) \times P(B^c)$ needs to equal 
+$P(A \cap B^c)$. For this to be possible, $P(B^c)$ needs to be 
+$\frac{0.4}{0.5}$ or $0.8$. Then we have that $P(B) = 1 - P(B^c)$, which
+means $P(B) = 1 - 0.8 = 0.2$. 
 
 \subsection*{Problem 5}
+$P(B|A)$ is greater, because in many colleges, all engineers need to take
+Calculus, but not all people taking Calculus need to take engineering. 
 
 \subsection*{Problem 6}
+The probability of the randomly selected person having an asthmatic attack on
+the given day is $0.056 \times 0.027$ or $0.001512$. 
 
 \subsection*{Problem 7}
+\subsubsection*{a.}
+The probability of both companies being profitable is $0.2 \times 0.15$ or
+$0.03$.
+\subsubsection*{b.}
+The probability of neither company being profitable is 
+$(1 - 0.2) \times (1 - 0.15)$ or $0.68$. 
+
+\subsubsection*{c.}
+The probability of at least one of the two companies being profitable is 
+$1 - 0.68$ or $0.32$. 
 
 \subsection*{Problem 8}
+\subsubsection*{a.}
+The probability that one of the two deploys is 
+
+\subsubsection*{b.}
+
 
 \subsection*{Problem 17}
 
