@@ -1,0 +1,222 @@
+%        File: homework4.tex
+%     Created: Tue Feb 03 05:00 PM 2015 P
+% Last Change: Tue Feb 03 05:00 PM 2015 P
+%
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage[parfill]{parskip}
+\title{Math 360  Homework 4}
+\author{Alex Schneider}
+\begin{document}
+\maketitle
+\section{Section 2.3}
+\subsection{29}
+\subsubsection{a.}
+The probability that an item with a flaw will not be detected by the first
+inspector is $0.1$. This means that if a flaw shows up with a probability of
+$0.10$, the probability of an item passing by the first inspector with a flaw is
+$0.1 \times 0.1$, or $0.01$. 
+
+\subsubsection{b.}
+We have that probability of the item passing by the first inspector with a flaw is $0.01$. The
+second inspector has a probability of not detecting the flaw of $0.3$.
+Therefore, the probability an item having an undetected flaw is $0.01 \times 0.3$,
+or $0.003$. 
+
+\subsection{30}
+\subsubsection{a.}
+The probability of someone testing positive and having a disease is as follows:
+
+\[P(D|+) = \frac{(0.99)(0.05}{(0.99)(0.05)+(0.01)(0.95)}\]
+\[P(D|+) = \frac{(0.99)(0.05}{(0.99)(0.05)+(0.01)(0.95)}\]
+\[P(D|+) \approx 0.84\]
+
+\subsubsection{b.}
+The probability of someone testing negative and not having the disease is as
+follows:
+\[P(D^c|-) = \frac{P(-|D^c)P(D^c)}{P(-|D^c)P(D^c)+P(-|D)P(D)} \]
+\[P(D^c|-) = \frac{(0.99)(0.95)}{(0.99)(0.95)+(0.01)(0.05)} \]
+\[P(D^c|-) \approx 0.999 \]
+
+\subsection{31}
+\subsubsection{a.}
+The probability of one child not having the disease is $0.75$. Therefore, the
+probability of two children not having the disease is $0.75^2$, or $0.5625$. 
+
+\subsubsection{b.}
+The probability that one child is a carrier is $0.5$. Therefore, the probability
+of both children being carriers is $0.5^2$, or $0.25$. 
+
+\subsubsection{c.}
+The probability of both children being carriers given that neither have the
+disease is as follows:
+
+\[P(C) = 0.25 \]
+\[P(D^c) = 0.5625 \]
+\[P(C \cap D^c) = 0.25 \]
+\[P(C|D^c) = \frac{P(C \cap D^c)}{P(D^c)} \]
+\[P(C|D^c) = \frac{0.25}{0.5625} \]
+\[P(C|D^c) \approx 0.\overline{4}  \]
+
+\subsubsection{d.}
+The probability of the woman being a carrier is $0.5$. The probability that the
+child will have the disease if the woman is a carrier is $0.25$. Therefore, the
+probability that the child will have the disease is $0.5 \times 0.25$ or
+$0.125$. 
+
+\subsection{33}
+33. Refer to Example 2.26.
+a. If a man tests negative, what is the probability that
+he actually has the disease?
+b. For many medical tests, it is standard procedure to
+repeat the test when a positive signal is given. If
+repeated tests are independent, what is the proba-
+bility that a man will test positive on two successive
+tests if he has the disease?
+c. Assuming repeated tests are independent, what is
+the probability that a man tests positive on two
+successive tests if he does not have the disease?
+d. If a man tests positive on two successive tests, what
+is the probability that he has the disease?
+\subsubsection{a.}
+If a man tests negative, he has a probability as follows:
+
+\[ P(D|-) = \frac{P(-|D)P(D)}{P(-|D)P(D)+P(-|D^c)P(D^c)} \]
+\[ P(D|-) = \frac{(0.01)(0.005)}{(0.01)(0.005) + (0.01)(0.995)} \]
+\[ P(D|-) = 0.005 \]
+
+\subsubsection{b.}
+The probability of testing positive on two tests given that he has the disease
+is $0.99^2$ or $0.9801$.
+
+\subsubsection{c.}
+The probability of testing positive on two successive tests if he doesn't have
+the disease is $0.01^2$ or $0.0001$. 
+
+\subsubsection{d.}
+The probability is as follows:
+
+\[ P(D|+^2) = \frac{P(+^2|D)P(D)}{P(+^2|D)P(D)+P(+^2|D^c)P(D^c)} \]
+\[ P(D|+^2) = \frac{(0.9801)(0.005)}{(0.9801)(0.005)+(0.0001)(0.995)} \]
+\[ P(D|+^2) \approx 0.9801  \]
+
+\section{Section 2.4}
+\subsection{3}
+\subsubsection{a.}
+The mean number is as follows:
+
+\[ \mu_x = 1(0.4)+2(0.2)+3(0.2)+4(0.1)+5(0.1) \]
+\[ \mu_x = 2.3 \]
+
+\subsubsection{b.}
+The variance is as follows:
+
+\[ \sigma^2_x = \sum_x (x-2.3)^2 P(X=x) \]
+\[ \sigma^2_x = (1-2.3)^2 (0.4) + (2-2.3)^2(0.2) + (3-2.3)^2(0.2) +
+                (4-2.3)^2(0.1) + (5-2.3)^2(0.1) \]
+\[ \sigma^2_x = 1.81 \]
+
+\subsubsection{c.}
+The standard deviation is as follows:
+
+\[ \sigma_x = \sqrt{\sigma^2_x} \]
+\[ \sigma_x \approx \sqrt{1.81} \]
+\[ \sigma_x \approx 1.35 \]
+
+\subsubsection{d.}
+The probability mass function is as follows:
+
+\begin{tabular}{r|ccccc}
+    x & $1 \times Y$ & $2 \times Y$ & $3 \times Y$ & $4 \times Y$ & $5 \times Y$ \\
+    \hline
+    $p(x)$ & 0.4 & 0.2 & 0.2 & 0.1 & 0.1
+\end{tabular}
+
+\subsubsection{e.}
+The mean number of gallons ordered would be $2.3 \times Y$. 
+
+\subsubsection{f.}
+The variance of the number of gallons ordered would be $1.81 \times Y$. 
+
+\subsubsection{g.}
+The standard deviation of the number of gallons ordered is approximately 
+$1.35 \times Y$. 
+
+\subsection{4}
+\subsubsection{a.}
+$p_3(x)$ is the only function that all the probabilities add up to 1. Therefore,
+it must be the probability mass function of X.
+
+\subsubsection{b.}
+$\mu_x$ is as follows:
+
+\[ \mu_x = 0(0.2)+1(0.2)+2(0.3)+3(0.1)+4(0.1) \]
+\[ \mu_x = 1.5 \]
+
+$\sigma_x^2$ is as follows:
+
+\[ \sigma_x^2 = (0.2)(0-1.5)^2 + (0.2)(1-1.5)^2 + (0.3)(2-1.5)^2 + (0.1)(4-1.5)^2 + (0.1)(5-1.5)^2 \]
+\[ \sigma_x^2 = 2.425 \]
+
+\subsection{5}
+\subsubsection{a.}
+The probability mass function is as follows:
+
+\begin{tabular}{r|ccccc}
+    x & 1 & 2 & 3 & 4 & 5 \\
+    \hline
+    $p(x)$ & 0.70 & 0.15 & 0.10 & 0.03 & 0.02
+\end{tabular}
+
+\subsubsection{b.}
+\[P(X \le 2) = 0.70 + 0.15 \]
+\[P(X \le 2) = 0.85 \]
+
+\subsubsection{c.}
+\[P(X > 3) = 0.03 + 0.02 \]
+\[P(X > 3) = 0.05 \]
+
+\subsubsection{d.}
+$\mu_x$ is as follows:
+
+\[ \mu_x = 1(0.70)+2(0.15)+3(0.10)+4(0.03)+5(0.02) \]
+\[ \mu_x = 1.52 \]
+
+\subsubsection{e.}
+$\sigma_x$ is as follows:
+
+\[ \sigma_x^2 = (0.70)(1 - 1.52)^2 + (0.15)(2 - 1.52)^2 + (0.10)(3 - 1.52)^2 +
+                (0.03)(4 - 1.52)^2 + (0.02)(5 - 1.52)^2 \]
+
+\[ \sigma_x^2 = 0.8696 \]
+\[ \sigma_x = \sqrt{0.8696} \]
+\[ \sigma_x \approx 0.93 \]
+
+\subsection{7}
+\subsubsection{a.}
+For $p(x)$ to be a probability mass function, $p(1)+p(2)+p(3)+p(4)$ needs to
+equal $1$. 
+
+\[ 1 = p(1)+p(2)+p(3)+p(4) \]
+\[ 1 = 1c+2c+3c+4c \]
+\[ 1 = 10c \]
+\[ \frac{1}{10} = c \]
+\[ 0.1 = c \]
+
+For $p(x)$ to be a probability mass function, $c$ needs to be $0.1$. 
+
+\subsubsection{b.}
+\[ P(X=2) = 0.1 \times 2 \]
+\[ P(X=2) = 0.2 \]
+
+\subsubsection{c.}
+
+
+\subsection{10}
+
+\subsection{11}
+
+\end{document}
+
+
