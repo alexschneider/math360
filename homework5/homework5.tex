@@ -12,9 +12,9 @@
 \begin{document}
 \maketitle
 
-\section{2.4}
-\subsection{Problem 15}
-\subsubsection{a.}
+\section*{2.4}
+\subsection*{Problem 15}
+\subsubsection*{a.}
 The mean lifetime can be found as follows:
 
 \[ \mu_x = \int_0^\infty t \times 0.1e^{-0.1t} dt \]
@@ -33,7 +33,7 @@ The mean lifetime can be found as follows:
 \[ \mu_x = - \left[ -1 \left( 10 \right) \right] \]
 \[ \mu_x = 10 \]
 
-\subsubsection{b.}
+\subsubsection*{b.}
 The standard deviation of the lifetimes is as follows:
 \[ \sigma^2_x = \int_0^{\infty}{t^2 \times 0.1e^{-0.1t}}dt - 10^2 \]
 \[ \sigma^2_x = uv - \int_{0}^{\infty} v du - 100 \]
@@ -82,7 +82,7 @@ The standard deviation of the lifetimes is as follows:
 \[ \sigma^2_x = 100 \]
 \[ \sigma_x = 10 \]
 
-\subsubsection{c.}
+\subsubsection*{c.}
 The cumulative distribution function of the lifetime is as follows:
 
 \[ F(x) = \int_{0}^{t}0.1e^{-0.1x}dx \]
@@ -90,11 +90,11 @@ The cumulative distribution function of the lifetime is as follows:
 \[ F(x) = -e^{-0.1t} - \left( -\cancelto{1}{e^{-0.1\times 0}} \right) \]
 \[ F(x) = -e^{-0.1t} + 1 \]
 
-\subsubsection{d.}
+\subsubsection*{d.}
 The probability is $F(12)$, or about $0.699$. 
 
-\subsection{Problem 16}
-\subsubsection{a.}
+\subsection*{Problem 16}
+\subsubsection*{a.}
 The mean diameter is as follows:
 
 \[ \mu_x = \int_{9.75}^{10.25}x \times 3\left[ 1 - 16{\left( x - 10 \right)}^2 \right]dx \]
@@ -106,7 +106,7 @@ The mean diameter is as follows:
              \left[ -4\times 9.75^4 + \frac{320}{3}\times 9.75^3 - \frac{1599}{2} \times 9.75^2 \right]\] 
 \[ \mu_x = 10 \]
 
-\subsubsection{b.}
+\subsubsection*{b.}
 \[ \sigma_x^2 = \int_{9.75}^{10.25} {(x - 10)}^2 \times 3\left[ 1 - 16{(x - 10)}^2 \right]dx \]
 \[ \sigma_x^2 = 3 \times \int_{9.75}^{10.25} {(x - 10)}^2 \times \left[ 1 - 16{(x - 10)}^2 \right]dx \]
 \[ \sigma_x^2 = 3 \times \int_{9.75}^{10.25} {(x - 10)}^2 dx  - 16\times\int_{9.75}^{10.25} {(x - 10)}^4  dx \]
@@ -114,7 +114,7 @@ The mean diameter is as follows:
 \[ \sigma_x^2 = 0.0125 \]
 \[ \sigma_x \approx 0.1118 \]
 
-\subsubsection{c.}
+\subsubsection*{c.}
 \[ F(X) = \int_{9.25}^{a} 3\left[ 1-16{\left( a-10 \right)}^2 \right] da \]
 \[ F(X) = 3 - 3 \times 16 \times \int_{9.25}^{x} {\left( a-10 \right)}^2 da \]
 \[ F(X) = 3 - 16 \times {\left[ {(a-10)}^3 \right]}^{x}_{9.75} \]
@@ -126,16 +126,16 @@ The mean diameter is as follows:
 
 
 
-\subsubsection{d.}
+\subsubsection*{d.}
 The proportion of piston rings that have diameters less than $9.75 cm$ is $0$
 because the minimum tolerance is $9.75 cm$. 
 
-\subsubsection{e.}
+\subsubsection*{e.}
 The proportion of piston rings that have diameters $9.75 cm$ and $10.25 cm$ is
 $1$ because the maximum bounds of the tolerance are those two numbers. 
 
-\subsection{Problem 18}
-\subsubsection{a.}
+\subsection*{Problem 18}
+\subsubsection*{a.}
 \[ P(X \ge 3) = 81 \times \int_{3}^{\infty} \frac{1}{{(x+3)}^4} dx \]
 \[ u = x + 3 \]
 \[ du = dx \]
@@ -145,7 +145,7 @@ $1$ because the maximum bounds of the tolerance are those two numbers.
               - \left( -\frac{27}{6^3} \right)\]
 
 \[ P(X \ge 3) = \frac{1}{8} \]
-\subsubsection{b.}
+\subsubsection*{b.}
 \[ P(1 \le X \le 3) = 81 \times \int_{1}^{3} \frac{1}{{(x+3)}^4} dx \]
 \[ u = x + 3 \]
 \[ du = dx \]
@@ -155,7 +155,7 @@ $1$ because the maximum bounds of the tolerance are those two numbers.
 \[ P(1 \le X \le 3) = \frac{19}{24} \]
 \[ P(1 \le X \le 3) \approx 0.2968 \]
 
-\subsubsection{c.}
+\subsubsection*{c.}
 \[ \mu_x = 81 \times \int_{0}^{\infty} \frac{x}{{(x+3)}^4} dx \]
 \[
     \begin{array}{ll}
@@ -175,76 +175,76 @@ $1$ because the maximum bounds of the tolerance are those two numbers.
 \]
 \[ \mu_x = \frac{3}{2} \]
 
-\subsubsection{d.}
+\subsubsection*{d.}
 \[ \sigma_x^2 = \int_{0}^{\infty} \frac{x^2}{{(x+3)}^4} dx - \frac{3}{2} \]
 \[ \sigma_x^2 = \frac{15}{2} \]
 
 
-\subsubsection{e.}
+\subsubsection*{e.}
 \[ F(X) = 81 \times \int_{0}^{x} \frac{1}{{(a+3)}^4} da \]
 \[ F(X) = 1 - \frac{1}{3(x+3)^3} \]
 
-\subsubsection{f.}
+\subsubsection*{f.}
 \[ 0.5 = 81 \times \int_{0}^{x_m} \frac{1}{{(a+3)}^4} da \]
 \[ x_m \approx 0.7798 \]
 
-\subsubsection{g.}
+\subsubsection*{g.}
 \[ 0.3 = 81 \times \int_{0}^{x_m} \frac{1}{{(a+3)}^4} da \]
 \[ x_m \approx 0.3787 \]
 
-\subsection{Problem 21}
-\subsubsection{a.}
+\subsection*{Problem 21}
+\subsubsection*{a.}
 \[ P(X\ge0.5) = \int_{0.5}^{1} 1.2(x+x^2) dx \]
 \[ P(X\ge0.5) = 0.8 \]
-\subsubsection{b.}
+\subsubsection*{b.}
 \[ \mu_x = \int_{0}^{1} 1.2x(x+x^2) dx \]
 \[ \mu_x = 0.7 \]
 
-\subsubsection{c.}
+\subsubsection*{c.}
 \[ P(0.6\le X\le0.8) = \int_{0.6}^{0.8} 1.2(x+x^2) dx \]
 \[ P(0.6\le X\le0.8) = 0.2864 \]
 
-\subsubsection{d.}
+\subsubsection*{d.}
 \[ \sigma_x^2 = \int_{0}^{1} 1.2x^2(x+x^2) dx - 0.7^2 \]
 \[ \sigma_x^2 = 0.05 \]
 \[ \sigma_x = 0.2236 \]
 
-\subsubsection{e.}
+\subsubsection*{e.}
 \[ P(0.7 - 0.4472 \le X\le 1) = \int_{0.7 - 0.4472}^{1} 1.2(x+x^2) dx \]
 \[ P(0.7 - 0.4472 \le X\le 1) = 0.9552 \]
 
 
-\subsubsection{f.}
+\subsubsection*{f.}
 \[ F(X) = \int_{0}^{x} 1.2(a+a^2) da \]
 \[ F(X) = (0.4x + 0.6) x^2  \]
 
-\subsection{Problem 25}
-\subsubsection{a.}
+\subsection*{Problem 25}
+\subsubsection*{a.}
 \[P(X\le2) = \int_{0}^{2}xe^{-x} dx \]
 \[P(X\le2) = 0.5940 \]
 
-\subsubsection{b.}
+\subsubsection*{b.}
 \[ P(1.5 \le X \le 3) = \int_{1.5}^{3}xe^{-x} dx \]
 \[ P(1.5 \le X \le 3) = 0.3587 \]
 
-\subsubsection{c.}
+\subsubsection*{c.}
 \[ \mu_x = \int_{0}^{\infty}x^2e^{-x} dx \]
 \[ \mu_x = 2 \]
 
-\subsubsection{d.}
+\subsubsection*{d.}
 \[P(X\le2) = \int_{0}^{x}ae^{-a} da \]
 \[P(X\le2) = 1 - e^{-x}(x+1) \]
 
-\section{2.5}
-\subsection{Problem 1}
-\subsubsection{a.}
+\section*{2.5}
+\subsection*{Problem 1}
+\subsubsection*{a.}
 The mean of $3X$ is $3\mu_x$ or $3\times 9.5$, which simplifies to $28.5$
 because we are applying a linear shift to $X$.
 
 The standard deviation of $3X$ is $|3|\sigma_x$ or $3\times 0.4$, or $1.2$,
 because we are applying a linear shift to $X$. 
 
-\subsubsection{b.}
+\subsubsection*{b.}
 The mean of $Y - X$ is $\mu_Y - \mu_X$, or $6.8 - 9.5$, which simplifies to
 $-2.7$. 
 
@@ -252,7 +252,7 @@ The standard deviation of $Y - X$ is $\sigma_Y + \sigma_X$, or $0.1+0.4$, which
 simplifies to $0.5$. This is because the standard deviation is the square root
 of a squared number, which cancels out the negative. 
 
-\subsubsection{c.}
+\subsubsection*{c.}
 The mean of $4Y$ is $\mu_Y\times 4$, or $6.8 \times 4$, which simplifies to
 $27.2$. The mean of $X + 4Y$ is $\mu_X + 27.2$, or $9.5 + 27.2$, which
 simplifies to $36.7$. 
@@ -261,34 +261,34 @@ The standard deviation of $4Y$ is $|4|\times \sigma_Y$, or $0.4$. The standard
 deviation of $X + 4Y$ is $\sigma_X + 0.4$, or $0.4+0.4$, which simplifies to
 $0.8$. 
 
-\subsection{Problem 7}
-\subsubsection{a.}
+\subsection*{Problem 7}
+\subsubsection*{a.}
 $\mu_M$ is $\mu_Y+1.5\times \mu_Y$, or $0.350 + 1.5\times 0.125$, which
 simplifies to $0.5375$.
 
-\subsubsection{b.}
+\subsubsection*{b.}
 $\sigma_M$ is $\sigma_Y+|1.5|\times \sigma_Y$, or $0.05+|1.5|\times 0.10$. This
 simplifies to $0.2$
 
-\subsection{Problem 8}
-\subsubsection{a.}
+\subsection*{Problem 8}
+\subsubsection*{a.}
 The mean of the total weight is $12.02 \times 12 oz$ or $144.24 oz$.
 
-\subsubsection{b.}
+\subsubsection*{b.}
 The standard deviation of the total weight is $|12|\times 0.03 oz$, or $0.36 oz$.
 
-\subsubsection{c.}
+\subsubsection*{c.}
 The mean of the average weight per box of the cereal is $12.02 oz$ as given in the
 problem description.
 
-\subsubsection{d.}
+\subsubsection*{d.}
 The standard deviation per box of cereal is $0.03 oz$ as given in the problem
 description. 
 
 The 
 
 
-\subsection{Problem 12}
+\subsection*{Problem 12}
 \end{document}
 
 
