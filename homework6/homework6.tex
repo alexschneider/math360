@@ -90,7 +90,52 @@ $\mu_total = 2(\mu_x) + 3(\mu_y) = 2(0.89)+3(1.22) = 5.44$
 $\sigma_total = \sqrt{4(\sigma_x^2) + 9(\sigma_y^2) + 2(2)(3)(0.97)} \approx 3.67$
 
 \subsection{16}
+\subsubsection{a.}
+$P(X>1 \; and \; Y>1) = \int_{1}^{\infty}\int_{1}^{\infty} x \times e^{-(x+xy)} dx \;
+dy \approx 0.07$
+\subsubsection{b.}
+$f_X(x) = \int_{0}^{\infty} x \times e^{-(x+xy)} dy = e^{-x}$
+
+$f_Y(y) = \int_{0}^{\infty} x \times e^{-(x+xy)} dx = \frac{1}{(y+1)^2}$
+\subsubsection{c.}
+X and Y aren't independent because $f_X(x)\times f_Y(y)$ does not equal
+$f_(X,Y)(x, y)$. 
+
 \subsection{17}
+\subsubsection{a.}
+$\mu_XY = \int_{1}^{2}\int_{4}^{5}xy(x+y)dydx = \frac{41}{6}$
+
+$\mu_x = \int_{1}^{2}\frac{x}{6}\left( x + \frac{9}{2} \right) dx =
+\frac{109}{72}$
+
+$\mu_y = \int_{4}^{5}\frac{y}{6}\left( y+\frac{3}{2} \right)dy =
+\frac{325}{72}$
+
+$Cov(X,Y) = \frac{41}{6} - \left( \frac{109}{72} \right)\left(\frac{325}{72}
+\right) = -0.000193$
+
+\subsubsection{b.}
+$\sigma_X^2 = \int_{1}^{2}\frac{x^2}{6}\left( x+\frac{9}{2} \right) dx - \left(
+\frac{109}{72}\right)^2 \approx 0.08$
+
+$\sigma_Y^2 = \int_{4}^{5}\frac{y^2}{6} \left( y+\frac{3}{2} \right) dy - \left(
+\frac{325}{72} \right)^2 \approx 0.08$
+
+$\rho_{X,Y} = \frac{-0.000193}{\sqrt{2\times (0.08)}} \approx -0.002$
+
+
 \subsection{18}
+\subsubsection{a.}
+$P(X>0.5$ and $Y>0.5) = \int_{0.5}^{1}\int_{0.5}^{1}\frac{3}{2}\left( x^2+y^2
+\right) dx dy = 0.4375 $
+\subsubsection{b.}
+$f_X(x) = \int_{0}^{1} \frac{3}{2} \left( x^2 + y^2 \right) dy = 
+\frac{3x^2+1}{2}$
+
+$f_Y(y) = \int_{0}^{1} \frac{3}{2} \left( x^2 + y^2 \right) dx = 
+\frac{3y^2+1}{2}$
+\subsubsection{c.}
+No, $f_X(x) \times f_Y(y)$ does not equal $f_(X,Y)(x,y)$. 
+
 
 \end{document}
