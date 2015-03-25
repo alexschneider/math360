@@ -5,6 +5,7 @@
 \documentclass[11pt]{article}
 \usepackage{geometry}
 \geometry{letterpaper}
+\usepackage{amsmath}
 \usepackage[parfill]{parskip}
 \title{Math 360 Homework 10}
 \author{Alex Schneider}
@@ -16,18 +17,18 @@
 \[ \frac{1}{\lambda} = 0.5 \]
 \[ 2 = \lambda \]
 \subsubsection{b.}
-\[ median = \frac{ln(2)}{\lambda} = 1.39 \]
+\[ median = \frac{\ln(2)}{\lambda} = 1.39 \]
 \subsubsection{c.}
 The standard deviation is 0.5.
 \subsubsection{d.}
 \[ P(X < m) = 0.8 \]
 \[ 1 - e^{-2\times m} = 0.8 \]
 \[ 0.2 = e^{-2\times m} \]
-\[ -\frac{ln(0.2)}{2} = m = 0.804 seconds \]
+\[ -\frac{\ln(0.2)}{2} = m = 0.804 seconds \]
 \subsubsection{e.}
 \[ P(X > 1) = e^{-2\times 1} = 0.14 \] 
 \subsubsection{f.}
-\[ P(X > 3 | X > 2) = \frac{P(X > 3 \cap P(X > 2)}{P(X > 2)} = 0.135 \]
+\[ P(X > 3 | X > 2) = \frac{P(X > 3) \cap P(X > 2)}{P(X > 2)} = 0.135 \]
 \subsection{3}
 \subsubsection{a.}
 \[ \frac{1}{0.25} = 4 \]
@@ -38,13 +39,13 @@ The standard deviation is 0.5.
 \subsubsection{d.}
 \[ P(X > 11) = e^{-0.25 \times 11} = 0.064 \]
 \subsubsection{e.}
-\[ median = \frac{ln(2)}{0.25} = 2.77 \]
+\[ median = \frac{\ln(2)}{0.25} = 2.77 \]
 \subsubsection{f.}
-\[ 3rd quartile = \frac{ln(4)}{0.25} = 5.55 \]
+\[ 3rd quartile = \frac{\ln(4)}{0.25} = 5.55 \]
 \subsubsection{g.}
 \[ P(X > m) = 0.01 \]
 \[ e^{-2 \times m} = 0.01 \]
-\[ m = \frac{ln(0.01)}{-2} = 2.30 \]
+\[ m = \frac{\ln(0.01)}{-2} = 2.30 \]
 
 \subsection{6}
 \subsubsection{a.}
@@ -57,6 +58,61 @@ I would be extremely dubious of the claim, but technically it would be possible.
 Given the information we have, it is impossible to tell whether the failure
 rates are exponentially distributed. It is certainly possible, but we would need
 more information than what is given.
+
+
+\section{4.11}
+\subsection{1}
+\subsubsection{a.}
+\[ \frac{12-12.01}{\frac{0.2}{\sqrt{144}}} = -0.6 \implies 0.2743 \]
+\subsubsection{b.}
+\[ \frac{12-12.03}{\frac{0.2}{\sqrt{144}}} = -1.8 \implies 0.0359 \]
+
+\subsection{2}
+\subsubsection{a.}
+\[ z = 1.26 \implies 0.8962 \]
+\subsubsection{b.}
+\[ z=1.28 \implies 0.081 mm thick \]
+\subsubsection{c.}
+We don't know if this is a normal sample, so therefore there is not enough
+information. 
+\subsection{7}
+\[ z= \frac{225-0.66}{\sqrt{0.005244}} \implies 0.5160 \]
+\subsection{8}
+\subsubsection{a.}
+\[ \frac{\frac{1500}{50} - 30.01}{\frac{0.1}{\sqrt{50}}} = -0.707 \implies
+0.2206 \]
+\subsubsection{b.}
+\[ \frac{\frac{2401}{80} - 30.01}{\frac{0.1}{\sqrt{80}}} = 0.22 \implies 0.5871
+\]
+\subsubsection{c.}
+\[ z=1.28 \implies 2402 L \]
+\subsection{9}
+\[ z=1.28 \implies 41 readings \]
+\subsection{11}
+\subsubsection{a.}
+\[ z=0.3 \implies 0.3557 \]
+\subsubsection{b.}
+\[ z=0.02 \implies 0.5040 \]
+\subsubsection{c.}
+\[ 2.33 \]
+
+\subsection{20}
+\subsubsection{a.}
+\[ \lambda = 4.04 \]
+\subsubsection{b.}
+\[ \mu_X = 72.5 \]
+\[ \sigma_X = 1.5 \]
+
+\subsubsection{c.}
+\[ \mu_{\hat{X}} = 4.04 \]
+\[ \sigma_{\hat{X}} = 0.01 \]
+\subsubsection{d.}
+\[ \hat{\lambda} = 3.89 \]
+\subsubsection{e.}
+\[ \hat{\lambda} = 4.30 \]
+\subsubsection{f.}
+\[ P(|X-\hat{X}| < 1000) = 0.73 \]
+
 
 \end{document}
 
